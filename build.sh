@@ -17,7 +17,7 @@ git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .rep
 git clone https://github.com/LineageOS/android_development.git -b lineage-21.0 development ;\
 
 # Removals
-#rm -rf device/xiaomi/msm8953-common development && \
+#rm -rf device/xiaomi/msm8953-common && \
 
 # Sync the repositories
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 

@@ -20,7 +20,6 @@ rm -rf external/chromium-webview && \
 # Sync the repositories
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 
 
-
 # Set up build environment
 source build/envsetup.sh && \
 
@@ -29,27 +28,3 @@ lunch evolution_tissot-userdebug ;\
 
 croot ;\
 mka evolution ; \
-# echo "Date and time:" ; \
-
-# Print out/build_date.txt
-# cat out/build_date.txt; \
-
-# Print SHA256
-# sha256sum out/target/product/*/*.zip"
-
-# Clean up
-# rm -rf tissot/*
-
-
-
-# Pull generated zip files
-# crave pull out/target/product/*/*.zip 
-
-# Pull generated img files
-# crave pull out/target/product/*/*.img
-
-# Upload zips to Telegram
-# telegram-upload --to sdreleases tissot/*.zip
-
-#Upload to Github Releases
-#curl -sf https://raw.githubusercontent.com/Meghthedev/Releases/main/headless.sh | sh

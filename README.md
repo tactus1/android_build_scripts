@@ -9,7 +9,7 @@ or if you have one running,
 ```tmux a -t <session number>```
 
 ## Make and Enter a folder called evo
-```mkdir evo; cd evo```
+```mkdir rom_name; cd rom_name```
 
 ## Pull and Run this script
 ```$ curl -sf https://raw.githubusercontent.com/Lafactorial/android_build_scripts/evox-tissot/build.sh | sh```

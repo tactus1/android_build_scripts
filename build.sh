@@ -9,7 +9,7 @@ set -e
 # Remove existing local_manifests
 crave run --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
-repo init -u https://github.com/Evolution-X/manifest -b udc ;\
+repo init -u https://github.com/Lafactorial/manifest -b udc ;\
 
 # Clone local_manifests repository
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\

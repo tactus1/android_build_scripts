@@ -15,7 +15,7 @@ repo init -u https://github.com/Lafactorial/manifest -b udc ;\
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\
 
 # Removals
-rm -rf external/chromium-webview/prebuilt/x86_64 && \
+rm -rf external/chromium-webview && \
 
 # Sync the repositories
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 

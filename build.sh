@@ -29,13 +29,13 @@ lunch evolution_tissot-userdebug ;\
 
 croot ;\
 mka evolution ; \
-echo "Date and time:" ; \
+# echo "Date and time:" ; \
 
 # Print out/build_date.txt
-cat out/build_date.txt; \
+# cat out/build_date.txt; \
 
 # Print SHA256
-sha256sum out/target/product/*/*.zip"
+# sha256sum out/target/product/*/*.zip"
 
 # Clean up
 # rm -rf tissot/*

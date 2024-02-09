@@ -12,7 +12,7 @@ crave run --clean --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/Evolution-X/manifest -b udc ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-test .repo/local_manifests ;\
+git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\
 
 # Removals
 #rm -rf prebuilts/clang/host/linux-x86 external/chromium-webview && \

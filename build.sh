@@ -7,7 +7,7 @@ set -e
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests
-crave run --clean --no-patch -- "rm -rf .repo/local_manifests && \
+crave run --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
 repo init -u https://github.com/Evolution-X/manifest -b udc ;\
 
@@ -15,7 +15,7 @@ repo init -u https://github.com/Evolution-X/manifest -b udc ;\
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/msm8953-common device/xiaomi/tissot kernel/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
+rm -rf device/xiaomi/msm8953-common && \
 
 # Sync the repositories
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 

@@ -15,7 +15,7 @@ repo init -u https://github.com/Evolution-X/manifest -b udc ;\
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-test .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/tissot device/xiaomi/msm8953-common kernel/xiaomi/msm8953 prebuilts/clang/host/linux-x86 && \
+rm -rf device/xiaomi/tissot device/xiaomi/msm8953-common kernel/xiaomi/msm8953 prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 

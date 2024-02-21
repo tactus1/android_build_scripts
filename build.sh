@@ -12,7 +12,7 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/Evolution-X/manifest -b udc --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-test .repo/local_manifests ;\
+git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\
 
 # Removals
 rm -rf device/xiaomi/tissot device/xiaomi/msm8953-common kernel/xiaomi/msm8953 prebuilts/clang/host/linux-x86 external/chromium-webview && \

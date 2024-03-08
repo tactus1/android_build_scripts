@@ -18,7 +18,7 @@ git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .rep
 rm -rf device/xiaomi/tissot device/xiaomi/msm8953-common kernel/xiaomi/msm8953 prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \ 
+repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
 
 
 # Set up build environment

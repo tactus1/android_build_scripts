@@ -28,7 +28,7 @@ source build/envsetup.sh && \
 lunch tequila_tissot-userdebug ;\
 
 croot ;\
-mka tequila ; \
+m bacon ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

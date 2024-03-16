@@ -15,7 +15,7 @@ repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lf
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Alpha-14 .repo/local_manifests ;\
 
 # Removals
-rm -rf prebuilts/clang/host/linux-x86 external/chromium-webview && \
+rm -rf device/xiaomi/tissot && \
 
 # Sync the repositories
 repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 

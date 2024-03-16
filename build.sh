@@ -9,10 +9,10 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 # Remove existing local_manifests
 crave run --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
-repo init -u https://github.com/tequilaOS/platform_manifest -b uno --depth=1 ;\
+repo init -u https://github.com/yaap/manifest.git -b fourteen --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/tactus1/local_manifest --depth 1 -b tequila-uno-tissot .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b yaap-a14-tissot .repo/local_manifests ;\
 
 # Removals
 rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
@@ -25,10 +25,10 @@ repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --p
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch tequila_tissot-userdebug ;\
+lunch yaap_tissot-userdebug ;\
 
 croot ;\
-m bacon ; \
+m yaap ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

@@ -15,11 +15,10 @@ repo init -u https://github.com/tequilaOS/platform_manifest -b uno --depth=1 ;\
 git clone https://github.com/tactus1/local_manifest --depth 1 -b tequila-uno-tissot .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
+rm -rf hardware/qcom-caf prebuilts external/chromium-webview && \
 
 # Sync the repositories
 repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
-
 
 # Set up build environment
 source build/envsetup.sh && \

@@ -15,7 +15,7 @@ repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lf
 git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Alpha-14 .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/tissot && \
+rm -rf device/xiaomi/tissot vendor/lineage && \
 
 # Sync the repositories
 repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 

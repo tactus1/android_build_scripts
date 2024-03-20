@@ -24,7 +24,7 @@ repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --p
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch horizon_raphael-userdebug ;\
+lunch aosp_raphael-userdebug ;\
 
 croot ;\
 m bacon ; \
@@ -37,7 +37,7 @@ m bacon ; \
 # sha256sum out/target/product/*/*.zip"
 
 # Clean up
-# rm -rf raphae;/*
+# rm -rf raphael;/*
 
 
 

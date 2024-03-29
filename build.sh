@@ -12,13 +12,10 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b los21 .repo/local_manifests ;\
-
-# Removals
-rm -rf device/xiaomi/tissot device/xiaomi/msm8953-common vendor/xiaomi/tissot vendor/xiaomi/msm8953-common kernel/xiaomi/msm8953 prebuilts/clang/host/linux-x86 external/chromium-webview && \
+git clone https://github.com/Lafactorial/local_manifest --depth 1 -b cr-14 .repo/local_manifests ;\
 
 # Sync the repositories
-repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
+/opt/crave/resync.sh && \
 
 
 # Set up build environment

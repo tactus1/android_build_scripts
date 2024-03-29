@@ -22,7 +22,7 @@ git clone https://github.com/Lafactorial/local_manifest --depth 1 -b cr-14 .repo
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_tissot-userdebug ;\
+lunch lineage_tissot-ap1a-userdebug ;\
 
 croot ;\
 make bacon ; \

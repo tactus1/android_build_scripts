@@ -14,6 +14,8 @@ repo init -u https://github.com/HorizonDroidLab/manifest -b 14 --depth=1 ;\
 # Clone local_manifests repository
 git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14-tissot .repo/local_manifests ;\
 
+# Removals
+rm -rf .repo
 
 # Sync the repositories
 /opt/crave/resync.sh && \

@@ -22,7 +22,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14
 
 
 # Set up build environment
-source build/envsetup.sh && \
+. build/envsetup.sh && \
 
 # Lunch configuration
 lunch aosp_tissot-ap1a-userdebug ;\

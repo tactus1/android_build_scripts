@@ -28,7 +28,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14
 lunch horizon_tissot-ap1a-userdebug ;\
 
 croot ;\
-m bacon ; \
+m horizon ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

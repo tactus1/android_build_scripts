@@ -9,7 +9,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 # Remove existing local_manifests
 crave run --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
-repo init -u https://github.com/HorizonDroidLab/manifest -b 14-qpr2 --depth=1 ;\
+repo init -u https://github.com/HorizonDroidLab/manifest -b 14 --depth=1 ;\
 
 # Clone local_manifests repository
 git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14-tissot .repo/local_manifests ;\
@@ -25,10 +25,10 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14
 . build/envsetup.sh && \
 
 # Lunch configuration
-lunch horizon_tissot-ap1a-userdebug ;\
+lunch aosp_tissot-userdebug ;\
 
 croot ;\
-m horizon ; \
+m bacon ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

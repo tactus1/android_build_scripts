@@ -18,8 +18,8 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b horizondroid-14
 
 
 # Sync the repositories
-/opt/crave/resync.sh && \
-
+# /opt/crave/resync.sh && \
+# No sync for this build LOL
 
 # Set up build environment
 . build/envsetup.sh && \

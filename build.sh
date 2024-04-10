@@ -12,13 +12,13 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/yaap/manifest.git -b fourteen --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/tactus1/local_manifest --depth 1 -b yaap-a14-tissot .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b YAAP-14-tissot .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
+# rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
-repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
+/opt/crave/resync.sh && \
 
 
 # Set up build environment

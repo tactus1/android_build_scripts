@@ -25,7 +25,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b YAAP-14-tissot 
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch yaap_tissot-userdebug ;\
+lunch yaap_tissot-ap1a-userdebug ;\
 
 croot ;\
 m yaap ; \

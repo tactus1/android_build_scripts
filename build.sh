@@ -15,7 +15,6 @@ repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs --depth=
 git clone https://github.com/tactus1/local_manifest --depth 1 -b YAAP-14-tissot .repo/local_manifests ;\
 
 # Removals
-# rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
 rm -rf prebuilts 
 
 # Sync the repositories

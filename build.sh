@@ -15,7 +15,7 @@ repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs --depth=
 git clone https://github.com/tactus1/local_manifest --depth 1 -b YAAP-14-tissot .repo/local_manifests ;\
 
 # Removals
-rm -rf prebuilts && \
+# rm -rf prebuilts && \
 
 # Sync the repositories
 /opt/crave/resync.sh && \
@@ -28,7 +28,7 @@ source build/envsetup.sh && \
 lunch yaap_tissot-ap1a-userdebug ;\
 
 croot ;\
-m yaap ; \
+crave run --clean && m yaap ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

@@ -7,7 +7,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests
-crave run --no-patch -- "rm -rf .repo/local_manifests && \
+crave run --clean --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
 repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs --depth=1 ;\
 
@@ -28,7 +28,7 @@ source build/envsetup.sh && \
 lunch yaap_tissot-ap1a-userdebug ;\
 
 croot ;\
-crave run --clean && m yaap ; \
+m yaap ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

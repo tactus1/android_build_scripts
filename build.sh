@@ -25,7 +25,7 @@ rm -rf prebuilts && \
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch yaap_tissot-ap1a-userdebug ;\
+lunch yaap_tissot-userdebug ;\
 
 croot ;\
 m yaap ; \

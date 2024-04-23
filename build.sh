@@ -18,7 +18,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b matrixx-14 .rep
 # rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
-repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
+/opt/crave/resync.sh && \  
 
 
 # Set up build environment

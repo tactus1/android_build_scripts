@@ -8,8 +8,8 @@ or if you have one running,
 ```tmux ls```
 ```tmux a -t <session number>```
 
-## Make and Enter a folder called evo
+## Make and Enter a folder called matrixx
 ```mkdir rom_name; cd rom_name```
 
 ## Pull and Run this script
-```$ curl -sf https://raw.githubusercontent.com/Lafactorial/android_build_scripts/evox-tissot/build.sh | sh```
+```$ curl -sf https://raw.githubusercontent.com/tactus1/android_build_scripts/matrixx-14-tissot/build.sh | sh```

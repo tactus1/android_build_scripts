@@ -25,7 +25,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-r
 . build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_raphael-userdebug ;\
+lunch lineage_raphael-ap1a-userdebug ;\
 
 croot ;\
 make bacon ; \

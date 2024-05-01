@@ -12,20 +12,20 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Alpha-14 .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-raphael .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/tissot vendor/lineage && \
+# rm -rf device/xiaomi/tissot vendor/lineage && \
 
 # Sync the repositories
-repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
+/opt/crave/resync.sh && \
 
 
 # Set up build environment
-source build/envsetup.sh && \
+. build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_tissot-userdebug ;\
+lunch lineage_raphael-userdebug ;\
 
 croot ;\
 make bacon ; \

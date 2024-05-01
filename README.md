@@ -8,8 +8,8 @@ or if you have one running,
 ```tmux ls```
 ```tmux a -t <session number>```
 
-## Make and Enter a folder called evo
+## Make and Enter a folder called alphadroid
 ```mkdir rom_name; cd rom_name```
 
 ## Pull and Run this script
-```$ curl -sf https://raw.githubusercontent.com/Lafactorial/android_build_scripts/alpha-tissot/build.sh | sh```
+```$ curl -sf https://raw.githubusercontent.com/tactus1/android_build_scripts/alphadroid-14-raphael/build.sh | sh```

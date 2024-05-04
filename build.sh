@@ -17,7 +17,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-r
 # Removals
 # rm -rf device/xiaomi/tissot vendor/lineage && \
 rm -rf packages/apps/Trebuchet && \
-rm -rf prebuilts 
+rm -rf prebuilts && \
 
 # Sync the repositories
 /opt/crave/resync.sh && \

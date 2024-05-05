@@ -26,7 +26,7 @@ rm -rf packages/apps/Trebuchet prebuilts && \
 . build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_raphael-ap1a-userdebug ;\
+lunch lineage_raphael-userdebug ;\
 
 croot ;\
 make bacon ; \

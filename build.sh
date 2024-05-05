@@ -15,7 +15,6 @@ repo init -u https://github.com/alphadroid-project/manifest -b alpha-14-wip --gi
 git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-raphael .repo/local_manifests ;\
 
 # Removals
-# rm -rf device/xiaomi/tissot vendor/lineage && \
 rm -rf packages/apps/Trebuchet prebuilts && \
 
 

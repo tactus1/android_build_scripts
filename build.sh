@@ -7,7 +7,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests
-crave run --no-patch -- "rm -rf .repo/local_manifests .repo/manifest* && \
+crave run --clean --no-patch -- "rm -rf .repo/local_manifests .repo/manifest* && \
 # Initialize repo with specified manifest
 repo init -u https://github.com/alphadroid-project/manifest -b alpha-14-wip --git-lfs --depth=1 ;\
 
@@ -16,8 +16,8 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-r
 
 # Removals
 # rm -rf device/xiaomi/tissot vendor/lineage && \
-rm -rf packages/apps/Trebuchet && \
-rm -rf prebuilts && \
+rm -rf packages/apps/Trebuchet prebuilts && \
+
 
 # Sync the repositories
 /opt/crave/resync.sh && \

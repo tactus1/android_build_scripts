@@ -3,7 +3,7 @@
 set -e
 
 # Initialize repo with specified manifest
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
+repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen-qpr --git-lfs --depth=1
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests
@@ -26,7 +26,7 @@ rm -rf packages/apps/Trebuchet prebuilts && \
 . build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_raphael-userdebug ;\
+lunch lineage_raphael-ap1a-userdebug ;\
 
 croot ;\
 make bacon ; \

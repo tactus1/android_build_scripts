@@ -12,10 +12,9 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/CherishOS/android_manifest -b uqpr2 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/tactus1/local_manifest --depth 1 -b cherish-14-tissot .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b cherish-14-raphael .repo/local_manifests ;\
 
 # Removals
-# rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
 /opt/crave/resync.sh && \  
@@ -25,7 +24,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b cherish-14-tiss
 . build/envsetup.sh && \
 
 # Lunch configuration
-brunch tissot ;\
+brunch raphael ;\
 
 croot ;\
 #mka evolution ; \

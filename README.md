@@ -8,7 +8,7 @@ or if you have one running,
 ```tmux ls```
 ```tmux a -t <session number>```
 
-## Make and Enter a folder called matrixx
+## Make and Enter a folder called cherish
 ```mkdir rom_name; cd rom_name```
 
 ## Pull and Run this script

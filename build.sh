@@ -3,7 +3,7 @@
 set -e
 
 # Initialize repo with specified manifest
-repo init -u https://github.com/CipherOS/android.git -b fourteen-qpr --git-lfs --depth=1
+repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen-qpr --git-lfs --depth=1
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests

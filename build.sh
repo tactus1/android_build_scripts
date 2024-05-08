@@ -15,6 +15,7 @@ repo init -u https://github.com/CherishOS/android_manifest -b uqpr2 ;\
 git clone https://github.com/tactus1/local_manifest --depth 1 -b cherish-14-raphael .repo/local_manifests ;\
 
 # Removals
+rm -rf prebuilts/rust && \
 
 # Sync the repositories
 /opt/crave/resync.sh && \  
@@ -23,10 +24,11 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b cherish-14-raph
 # Set up build environment
 . build/envsetup.sh && \
 
+croot ;\
+
 # Lunch configuration
 brunch raphael ;\
 
-croot ;\
 #mka evolution ; \
 # echo "Date and time:" ; \
 

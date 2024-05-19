@@ -9,26 +9,25 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 # Remove existing local_manifests
 crave run --no-patch -- "rm -rf .repo/local_manifests && \
 # Initialize repo with specified manifest
-repo init -u https://github.com/Evolution-X/manifest -b udc --depth=1 ;\
+repo init -u https://github.com/DerpFest-AOSP/manifest -b 14 --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b Evo-14 .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b derp-14-topaz .repo/local_manifests ;\
 
 # Removals
-rm -rf device/xiaomi/msm8953-common prebuilts/clang/host/linux-x86 external/chromium-webview && \
 
 # Sync the repositories
-repo sync -c -j\$(nproc --all) --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync && \ 
+/opt/crave/resynch.sh && \ 
 
 
 # Set up build environment
-source build/envsetup.sh && \
+. build/envsetup.sh && \
 
 # Lunch configuration
-lunch evolution_tissot-userdebug ;\
+lunch derp_topaz-userdebug ;\
 
 croot ;\
-mka evolution ; \
+mka derp ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

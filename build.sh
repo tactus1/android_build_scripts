@@ -9,7 +9,7 @@ repo init -u https://github.com/CipherOS/android_manifest.git -b fourteen-qpr --
 # Remove existing local_manifests
 crave run --clean --no-patch -- "rm -rf .repo/local_manifests .repo/manifest* && \
 # Initialize repo with specified manifest
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-14-wip --git-lfs --depth=1 ;\
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs --depth=1 ;\
 
 # Clone local_manifests repository
 git clone https://github.com/tactus1/local_manifest --depth 1 -b alphadroid-14-raphael .repo/local_manifests ;\

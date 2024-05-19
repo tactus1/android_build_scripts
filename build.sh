@@ -24,7 +24,7 @@ git clone https://github.com/tactus1/local_manifest --depth 1 -b derp-14-topaz .
 . build/envsetup.sh && \
 
 # Lunch configuration
-lunch derp_topaz-userdebug ;\
+lunch derp_topaz-ap1a-userdebug ;\
 
 croot ;\
 mka derp ; \

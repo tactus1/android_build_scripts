@@ -12,7 +12,7 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/Lafactorial/local_manifest --depth 1 -b cr-14 .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b los-21 .repo/local_manifests ;\
 
 # Sync the repositories
 /opt/crave/resync.sh && \
@@ -22,10 +22,10 @@ git clone https://github.com/Lafactorial/local_manifest --depth 1 -b cr-14 .repo
 source build/envsetup.sh && \
 
 # Lunch configuration
-lunch lineage_tissot-ap1a-userdebug ;\
+# lunch lineage_tissot-ap1a-userdebug 
 
 croot ;\
-make bacon ; \
+brunch tissot ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

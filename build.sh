@@ -25,7 +25,7 @@ source build/envsetup.sh && \
 # lunch lineage_tissot-ap1a-userdebug 
 
 croot ;\
-brunch tissot ; \
+breakfast tissot ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

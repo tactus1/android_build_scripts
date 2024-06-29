@@ -26,6 +26,7 @@ source build/envsetup.sh && \
 
 croot ;\
 breakfast tissot ; \
+make bacon ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

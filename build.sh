@@ -12,7 +12,7 @@ crave run --no-patch -- "rm -rf .repo/local_manifests && \
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1 ;\
 
 # Clone local_manifests repository
-git clone https://github.com/tactus1/local_manifest --depth 1 -b los-21-tissot .repo/local_manifests ;\
+git clone https://github.com/tactus1/local_manifest --depth 1 -b los-21-tissot-dsp .repo/local_manifests ;\
 
 # Sync the repositories
 /opt/crave/resync.sh && \

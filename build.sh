@@ -29,7 +29,7 @@ croot ;\
 # Lunch configuration
 brunch raphael ;\
 
-#mka evolution ; \
+make bacon ; \
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt

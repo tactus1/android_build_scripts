@@ -27,7 +27,7 @@ rm -rf prebuilts/rust && \
 croot ;\
 
 # Lunch configuration
-brunch raphael ;\
+lunch lineage_raphael-ap2a-user ;\
 
 make bacon ; \
 # echo "Date and time:" ; \

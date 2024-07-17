@@ -3,23 +3,25 @@
 set -e
 
 # Initialize repo with specified manifest
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
+# repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
 
 # Run inside foss.crave.io devspace, in the project folder
 # Remove existing local_manifests
-crave run --clean --no-patch -- "rm -rf .repo/local_manifests && \
+crave run  --no-patch -- "rm -rf .repo/local_manifests ;\
 # Initialize repo with specified manifest
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 ;\
+repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --depth=1 ;\
 
 # Clone local_manifests repository
 git clone https://github.com/tactus1/local_manifest --depth 1 -b lineage-21-raphael .repo/local_manifests ;\
 
 # Removals
-rm -rf prebuilts/rust && \
+# rm -rf prebuilts/rust && \
 
 # Sync the repositories
 /opt/crave/resync.sh && \  
 
+
+repo forall -c 'git lfs install && git lfs pull && git lfs checkout' ;\
 
 # Set up build environment
 . build/envsetup.sh && \
@@ -28,8 +30,8 @@ croot ;\
 
 # Lunch configuration
 # lunch lineage_raphael-ap2a-user ;\
-breakfast raphael ; \
-make bacon ; \
+breakfast raphael ;\
+make bacon ;\
 # echo "Date and time:" ; \
 
 # Print out/build_date.txt
@@ -40,8 +42,6 @@ make bacon ; \
 
 # Clean up
 # rm -rf tissot/*
-
-
 
 # Pull generated zip files
 # crave pull out/target/product/*/*.zip
